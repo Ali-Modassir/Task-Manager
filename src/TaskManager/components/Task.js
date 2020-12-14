@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
-import { TaskListContext } from '../contexts/TaskListContext'
+import React, { useContext } from "react";
+import { TaskListContext } from "../../contexts/TaskListContext";
 
 const Task = ({ task }) => {
-  const { removeTask, findItem } = useContext(TaskListContext)
+  const { removeTask, findItem } = useContext(TaskListContext);
   return (
     <li className="list-item">
       <span>{task.title} </span>
@@ -18,7 +18,7 @@ const Task = ({ task }) => {
         </button>
       </div>
     </li>
-  )
-}
+  );
+};
 
-export default Task
+export default Task;

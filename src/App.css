@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 .container {
-  background: grey;
+  background-image: linear-gradient(
+    112.1deg,
+    rgba(32, 38, 57, 1) 11.4%,
+    rgba(63, 76, 119, 1) 70.2%
+  );
   width: 100%;
   height: 100vh;
   display: flex;
@@ -35,6 +39,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Ubuntu", serif;
+  color: grey;
 }
 
 .form {
@@ -56,6 +61,7 @@
   width: 80%;
   padding: 15px 10px 10px 20px;
   margin-right: 10px;
+  margin-bottom: 10px;
   font-family: "Ubuntu", serif;
   font-size: 15px;
   color: #ccc;
@@ -68,10 +74,17 @@
 
 .buttons {
   display: flex;
+  justify-content: space-between;
 }
 
 .btn {
   margin: 10px;
+}
+
+.switch-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .add-task-btn {
@@ -133,6 +146,34 @@
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
+  color: #444;
+}
+
+.login-btn {
+  width: 130px;
+  height: 35px;
+  background-color: brown;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  margin: 4%;
+}
+.signup-btn {
+  width: 130px;
+  height: 35px;
+  background-color: brown;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+  margin: 4%;
 }
 
 @media (max-width: 600px) {
